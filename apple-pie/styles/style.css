@@ -22,3 +22,25 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+h1 {
+  background-image: url('lab-css-recipes-clone\apple-pie\images\apple-pie.jpg');
+  text-align: center;
+}
+
+.below-image {
+  text-align: center;
+  font-size: 16px;
+  width: 800px;
+  color: blueviolet;
+}
+
+img {
+  text-align: center;
+  width: 40%;
+  color:brown;
+}
+ol{
+  text-align:center;
+  margin: top 10px;
+}
