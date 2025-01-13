@@ -38,48 +38,56 @@ body {
 
 .container {
   background-image: url("../images/apple-pie.jpg");
-  margin-top: auto;
-  width: 5000px;
-  height: 1000px;
+  /* margin-top: auto; */
+  width: 3000px;
+  height: 2000px; 
+  
 }
 
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position:absolute;
+  top: 75%;
+  left: 55%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 100px;
+  font-size: 200px;
 }
 
 
 hr {
-  margin-left: 400px;
-  margin-right: 200px;
+  margin-left: 450px;
+  margin-right: 450px;
 
 }
 
 .below-image {
-  font-size: 20px;
-  width: 800px;
+  font-size: 45px;
+  width: 1700px;
   margin-left: 400px;
   text-align: left;
+  padding: 0 70px;
 
 
 }
+img {
+width:800px;
 
+}
 h3 {
-  text-align: left;
+  text-align: justify;
   margin-left: 400px;
   margin-right: 200px;
-  font-size: 30px;
+  font-size: 40px;
+  padding: 0 70px;
+  font-weight: bold;
 }
 
 ul {
   margin: 0;
   text-align: left;
   margin-left: 450px;
-  font-size: 20px;
+  font-size: 35px;
+  padding: 0 70px;
 }
 
 ul.dashed {
@@ -99,17 +107,19 @@ ol {
   margin: 0;
   text-align: left;
   margin-left: 450px;
-  margin-right: 220px;
-  font-size: 20px;
+  margin-right: 300px;
+  font-size: 35px;
+  padding: 0 70px;
 }
 
-/* ol.comma{
-list-style-type: none;
+.comma{
+  counter-reset: list;
+ padding-left: 40px;
 }
-ol.comma > li{
-  text-indent: -5px;
+.comma > li{
+ list-style: none;
 }
-ol.comma > li:before{
-  content: ")";
-  text-indent:-5px;
-} */
+.comma > li:before{
+  content: counter(list)")";
+  counter-increment: list;
+} 
